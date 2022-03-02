@@ -19,6 +19,7 @@ public class DialogueScene1 : MonoBehaviour {
         public GameObject JasonFrown;
         public GameObject ArtBG1;
         public GameObject ArtBG2;
+        public GameObject ArtBG3;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextSceneButton;
@@ -34,6 +35,7 @@ void Start(){         // initial visibility settings
         JasonFrown.SetActive(false);
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
+        ArtBG3.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextSceneButton.SetActive(false);
@@ -64,6 +66,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
+                ArtBG1.SetActive(false);
+                ArtBG2.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "Okay let’s see... what do I need to fix today...";
                 Char2name.text = "";
@@ -89,7 +93,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==7){
+       else if (primeInt == 7){
                 Char1name.text = "Jason";
                 Char1speech.text = "Huh? Looks like there’s another error...";
                 Char2name.text = "";
@@ -113,8 +117,8 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 10){
                  DoubleClickButton.SetActive(false);
                  // audioSource.Play();
-                 ArtBG1.SetActive(false);
-                 ArtBG2.SetActive(true);
+                 ArtBG2.SetActive(false);
+                 ArtBG3.SetActive(true);
                  Char1name.text = "Jason";
                  Char1speech.text = "What the...";
                  Char2name.text = "";
