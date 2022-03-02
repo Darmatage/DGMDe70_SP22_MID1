@@ -14,10 +14,13 @@ public class DialogueScene2b : MonoBehaviour {
         public Text Char2speech;
         public Text Char3name;
         public Text Char3speech;
+        public Text Char4name;
+        public Text Char4speech;
         public GameObject DialogueDisplay;
         public GameObject CubeyArt;
         public GameObject JasonFrown;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice3a;
         public GameObject Choice3b;
         public GameObject Choice2c;
@@ -34,6 +37,7 @@ void Start(){         // initial visibility settings
         CubeyArt.SetActive(false);
         JasonFrown.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice3a.SetActive(false);
         Choice3b.SetActive(false);
         Choice2c.SetActive(false);
@@ -59,148 +63,187 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "Listening to Cubey's advice, Jason goes looking for the natives of Unity.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt ==3){
-                Char1name.text = "";
-                Char1speech.text = "At the Hall, the native Game Objects approach Jason as if he is a god";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Game Objects";
-                Char3speech.text = "Oh Great Creator from high above, please save us from the errors that plague us!";
-        }
-       else if (primeInt == 5){
-                JasonFrown.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Game Objects";
-                Char3speech.text = "Those errors mustn't be challenged alone! You must seek help from the sacred scripts!";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 6){
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "...";
+                Char1speech.text = "I have no other plans, so I might as well take the friendly abstract cube's advice.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
-       else if (primeInt ==7){
+        else if (primeInt ==3){
+                Char1name.text = "Jason";
+                Char1speech.text = "Hey, wait up! Who are these natives that you speak of?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+                //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 4){
                 JasonFrown.SetActive(false);
+                CubeyArt.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cubey";
-                Char2speech.text = "...";
+                Char2speech.text = "It looks like you’re curious! The natives who inhabit this land are the Game Objects. They come in many shapes and sizes, and they can do all sorts of interesting things.";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
-       else if (primeInt == 8){
+        else if (primeInt == 5){
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "AAAH?!? How the, who... what are you???";
+                Char1speech.text = "Game Objects? I’m familiar with those... Although if they all come to life like you do that might be a handful... I hope they are friendly.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-                // Choice1a.SetActive(true); // function Choice1aFunct()
-                // Choice1b.SetActive(true); // function Choice1bFunct()
+                Char4name.text = "";
+                Char4speech.text = "";
+                //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 6){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Cubey";
+                Char2speech.text = "Hahaha. It looks like you worry too much! They're very friendly, just like me!";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+        }
+        else if (primeInt == 7){
+                JasonFrown.SetActive(true);
+                Char1name.text = "Jason";
+                Char1speech.text = "Haha let’s hope they’re not like you at all...";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+        }
+        else if (primeInt == 8){
+                ArtBG1.SetActive(false);
+                ArtBG2.SetActive(true);
+                Char1name.text = "Jason";
+                Char1speech.text = "(Cubey and I arrive at a magnificent hallway.)";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
         else if (primeInt == 9){
-                JasonFrown.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Cubey";
-                Char2speech.text = "I'm Cubey the 3D cube! You might recognize me as the great-great-great-grandson of Clippy the paper clip!";
+                Char1name.text = "Jason";
+                Char1speech.text = "(It is lined with huge illuminated cubes, each with its own unique item inside.)";
+                Char2name.text = "";
+                Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
         else if (primeInt == 10){
-                 JasonFrown.SetActive(true);
                  Char1name.text = "Jason";
-                 Char1speech.text = "C-Clippy? Clippy died years ago... Clippy had children?";
+                 Char1speech.text = "(These must be the natives.)";
                  Char2name.text = "";
                  Char2speech.text = "";
                  Char3name.text = "";
                  Char3speech.text = "";
+                 Char4name.text = "";
+                 Char4speech.text = "";
          }
          else if (primeInt == 11){
                   JasonFrown.SetActive(false);
                   Char1name.text = "";
                   Char1speech.text = "";
-                  Char2name.text = "Cubey";
-                  Char2speech.text = "It looks like you’re confused, Grandpa Clippy never died. Haven't you heard? He’s redebuting in Windows 11!";
-                  Char3name.text = "";
-                  Char3speech.text = "";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "Narrator";
+                  Char3speech.text = "As Jason approaches one of the cubes, the Game Objects all come to life and begin to glow brightly, some of which are a sickeningly saturated red color.";
+                  Char4name.text = "";
+                  Char4speech.text = "";
           }
           else if (primeInt == 12){
-                  JasonFrown.SetActive(true);
-                  Char1name.text = "Jason";
-                  Char1speech.text = "Okay... Anyhow, what is this place? Am I dead? ... Am I condemned to purgatory in UNITY?!";
+                  Char1name.text = "";
+                  Char1speech.text = "";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
                   Char3speech.text = "";
+                  Char4name.text = "Blue Game Object";
+                  Char4speech.text = "Oh Great Creator from high above, please save us!";
           }
           else if (primeInt == 13){
-                   JasonFrown.SetActive(false);
-                   Char1name.text = "";
-                   Char1speech.text = "";
-                   Char2name.text = "Cubey";
-                   Char2speech.text = "It looks like you're agitated. Please calm down... You've just been transported into this build of Unity by some erroneous code... Would you like me to help?";
+                   JasonFrown.SetActive(true);
+                   Char1name.text = "Jason";
+                   Char1speech.text = "...me? Great creator? Well that’s an interesting way to put it... What's wrong?";
+                   Char2name.text = "";
+                   Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
           }
           else if (primeInt == 14){
-                  JasonFrown.SetActive(true);
-                  Char1name.text = "Jason";
-                  Char1speech.text = "My gosh, you really are related to Clippy huh... Sure, help me out.";
+                  JasonFrown.SetActive(false);
+                  Char1name.text = "";
+                  Char1speech.text = "";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
                   Char3speech.text = "";
+                  Char4name.text = "Blue Game Object";
+                  Char4speech.text = "The errors! The errors have plagued us, breaking our parents and children! You must help us, O' Great Creator!";
           }
           else if (primeInt == 13){
-                   JasonFrown.SetActive(false);
                    Char1name.text = "";
                    Char1speech.text = "";
-                   Char2name.text = "Cubey";
-                   Char2speech.text = "I recommend talking to the natives! They're sure to know the way out!";
+                   Char2name.text = "";
+                   Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "Blue Game Object";
+                   Char4speech.text = "Come with me, great champion! I will show you the key to defeating the errors!";
           }
           else if (primeInt == 15){
-                  JasonFrown.SetActive(true);
-                  Char1name.text = "Jason";
-                  Char1speech.text = "I can see this Clippy-relative getting on my nerves if I stay with him...";
-                  Char2name.text = "";
-                  Char2speech.text = "";
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Cubey";
+                  Char2speech.text = "It looks like an unexpected, unreasonably heavy responsibility has been unequivocally pushed onto you! Would you like to assist them?";
                   Char3name.text = "";
                   Char3speech.text = "";
+                  Char4name.text = "";
+                  Char4speech.text = "";
           }
           else if (primeInt == 16){
+                  JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
-                  Char1speech.text = "What should I do?";
+                  Char1speech.text = "(Hmmm, this is all very sudden, and it could be dangerous… Then again, it's just a Unity error, I might be able to handle it myself. Or...)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
                   Char3speech.text = "";
+                  Char4name.text = "";
+                  Char4speech.text = "";
+          }
+          else if (primeInt == 17){
+                  Char1name.text = "Jason";
+                  Char1speech.text = "(What should I do)";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
+                  Char3speech.text = "";
+                  Char4name.text = "";
+                  Char4speech.text = "";
                   NextButton.SetActive(false);
                   allowSpace = false;
                   Choice3a.SetActive(true);
@@ -215,6 +258,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
           }
           else if (primeInt == 101){
                    Char1name.text = "Jason";
@@ -223,6 +268,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene3aButton.SetActive(true);
@@ -236,6 +283,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
           }
           else if (primeInt == 201){
                    JasonFrown.SetActive(false);
@@ -245,6 +294,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "Great! Let's be on our way.";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene3bButton.SetActive(true);
@@ -258,6 +309,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
           }
           else if (primeInt == 301){
                    JasonFrown.SetActive(false);
@@ -267,6 +320,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "Wait! Come back! Don't go off on your own, Jason!";
                    Char3name.text = "";
                    Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene2cButton.SetActive(true);
@@ -276,7 +331,7 @@ public void talking(){         // main story function. Players hit next to progr
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice3aFunct(){
                 Char1name.text = "Jason";
-                Char1speech.text = "I don't think listening to him is the right move here.";
+                Char1speech.text = "I can do this myself!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -291,11 +346,13 @@ public void talking(){         // main story function. Players hit next to progr
 
         public void Choice3bFunct(){
                 Char1name.text = "Jason";
-                Char1speech.text = "You know what, Cubey?";
+                Char1speech.text = "Sure, I'll helpt the natives.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
                 primeInt = 199;
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
@@ -306,11 +363,13 @@ public void talking(){         // main story function. Players hit next to progr
 
         public void Choice2cFunct(){
                 Char1name.text = "Jason";
-                Char1speech.text = "Why should I listen to you!?";
+                Char1speech.text = "I can't take this anymore... I gotta get away from these things!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
                 primeInt = 299;
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
