@@ -304,7 +304,7 @@ public void talking(){         // main story function. Players hit next to progr
           // Choise 2c
           else if (primeInt == 300){
                    Char1name.text = "Jason";
-                   Char1speech.text = "This is such a rare opportunity, so I'm going to check out all the sights here! Sayonara!";
+                   Char1speech.text = "I gotta get away from these things!";
                    Char2name.text = "";
                    Char2speech.text = "";
                    Char3name.text = "";
@@ -346,7 +346,7 @@ public void talking(){         // main story function. Players hit next to progr
 
         public void Choice3bFunct(){
                 Char1name.text = "Jason";
-                Char1speech.text = "Sure, I'll helpt the natives.";
+                Char1speech.text = "Sure, I'll help the natives.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
