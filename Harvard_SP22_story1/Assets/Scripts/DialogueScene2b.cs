@@ -19,6 +19,8 @@ public class DialogueScene2b : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject CubeyArt;
         public GameObject JasonFrown;
+        public GameObject JasonSmile;
+        public GameObject JasonNormal;
         public GameObject ArtBG1;
         public GameObject ArtBG2;
         public GameObject Choice3a;
@@ -36,6 +38,8 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         CubeyArt.SetActive(false);
         JasonFrown.SetActive(false);
+        JasonSmile.SetActive(false);
+        JasonNormal.SetActive(false);
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
         Choice3a.SetActive(false);
@@ -73,7 +77,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-        else if (primeInt ==3){
+        else if (primeInt == 3){
                 Char1name.text = "Jason";
                 Char1speech.text = "Hey, wait up! Who are these natives that you speak of?";
                 Char2name.text = "";
@@ -227,7 +231,7 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 16){
                   JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
-                  Char1speech.text = "(Hmmm, this is all very sudden, and it could be dangerous… Then again, it's just a Unity error, I might be able to handle it myself. Or...)";
+                  Char1speech.text = "(Hmmm, this is all very sudden, and it could be dangerous... Then again, it's just a Unity error, I might be able to handle it myself. Or...)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
@@ -345,6 +349,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void Choice3bFunct(){
+                JasonFrown.SetActive(false);
+                JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "Sure, I'll help the natives.";
                 Char2name.text = "";

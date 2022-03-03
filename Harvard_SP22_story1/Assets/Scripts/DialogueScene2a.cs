@@ -18,6 +18,8 @@ public class DialogueScene2a : MonoBehaviour {
         public GameObject CubeyArt;
         public GameObject CubeyTransform;
         public GameObject JasonFrown;
+        public GameObject JasonSmile;
+        public GameObject JasonNormal;
         public GameObject ArtBG1;
         public GameObject Choice3a;
         public GameObject Choice2b;
@@ -35,6 +37,8 @@ void Start(){         // initial visibility settings
         CubeyArt.SetActive(false);
         CubeyTransform.SetActive(false);
         JasonFrown.SetActive(false);
+        JasonSmile.SetActive(false);
+        JasonNormal.SetActive(false);
         ArtBG1.SetActive(true);
         Choice3a.SetActive(false);
         Choice2b.SetActive(false);
