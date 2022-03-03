@@ -21,6 +21,7 @@ public class DialogueScene2a : MonoBehaviour {
         public GameObject JasonSmile;
         public GameObject JasonNormal;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice3a;
         public GameObject Choice2b;
         public GameObject Choice2c;
@@ -40,6 +41,7 @@ void Start(){         // initial visibility settings
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice3a.SetActive(false);
         Choice2b.SetActive(false);
         Choice2c.SetActive(false);
@@ -72,7 +74,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt == 3){
-                 JasonFrown.SetActive(false);
+                 ArtBG1.SetActive(false);
+                 ArtBG2.SetActive(true);
                  CubeyTransform.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -89,36 +92,31 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 5){
-                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 6){
-                JasonFrown.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cubey";
-                Char2speech.text = "...";
+                Char2speech.text = "......";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 7){
-                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "...";
+                Char1speech.text = ".........";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
-                JasonFrown.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cubey";
-                Char2speech.text = "...";
+                Char2speech.text = "............";
         }
        else if (primeInt == 9){
-                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "AAAH?!? How the, who... what are you???";
                 Char2name.text = "";
@@ -127,56 +125,48 @@ public void talking(){         // main story function. Players hit next to progr
                 // Choice1b.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 10){
-                JasonFrown.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cubey";
                 Char2speech.text = "I'm Cubey the 3D cube! You might recognize me as the great-great-great-grandson of Clippy the paper clip!";
         }
         else if (primeInt == 11){
-                 JasonFrown.SetActive(true);
                  Char1name.text = "Jason";
                  Char1speech.text = "C-Clippy? Clippy died years ago... Clippy had children?";
                  Char2name.text = "";
                  Char2speech.text = "";
          }
          else if (primeInt == 12){
-                  JasonFrown.SetActive(false);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "Cubey";
                   Char2speech.text = "It looks like you’re confused, Grandpa Clippy never died. Haven't you heard? He’s redebuting in Windows 11!";
           }
           else if (primeInt == 13){
-                  JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "Okay... Anyhow, what is this place? Am I dead? ... Am I condemned to purgatory in UNITY?!";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
           else if (primeInt == 14){
-                   JasonFrown.SetActive(false);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "It looks like you're agitated. Please calm down... You've just been transported into this build of Unity by some erroneous code... Would you like me to help?";
           }
           else if (primeInt == 15){
-                  JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "My gosh, you really are related to Clippy huh... Sure, help me out.";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
           else if (primeInt == 16){
-                   JasonFrown.SetActive(false);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "I recommend talking to the natives! They're sure to know the way out!";
           }
           else if (primeInt == 17){
-                  JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "I can see this Clippy-relative getting on my nerves if I stay with him...";
                   Char2name.text = "";
@@ -218,7 +208,6 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
           }
           else if (primeInt == 201){
-                   JasonFrown.SetActive(false);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
@@ -230,13 +219,14 @@ public void talking(){         // main story function. Players hit next to progr
 
           // Choise 2c
           else if (primeInt == 300){
+                   JasonFrown.SetActive(false);
+                   JasonSmile.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "This is such a rare opportunity, so I'm going to check out all the sights here! Sayonara!";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
           else if (primeInt == 301){
-                   JasonFrown.SetActive(false);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
@@ -262,6 +252,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void Choice2bFunct(){
+                JasonFrown.SetActive(false);
+                JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "You know what, Cubey?";
                 Char2name.text = "";
