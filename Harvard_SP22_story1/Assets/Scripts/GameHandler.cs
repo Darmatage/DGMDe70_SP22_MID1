@@ -35,6 +35,10 @@ public class GameHandler : MonoBehaviour{
                 SceneManager.LoadScene("Scene1");
         }
 
+        public void OpenCredits(){
+                SceneManager.LoadScene("Credits");
+        }
+
         public void RestartGame(){
                 SceneManager.LoadScene("MainMenu");
         }
