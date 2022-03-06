@@ -33,7 +33,6 @@ public class DialogueScene3a : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
-        CubeyArt.SetActive(false);
         JasonFrown.SetActive(false);
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
@@ -61,8 +60,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
-                JasonFrown.SetActive(true);
-                CubeyArt.SetActive(false);
+                JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "(I wander around what I assume to be the project panel, amazed at how, despite being two-dimensional, everything still feels... normal.)";
                 Char2name.text = "";
@@ -73,8 +71,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 3){
+                JasonSmile.SetActive(false);
+                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "(I must have been using way too much unity lately, because this is one trippy dream)";
+                Char1speech.text = "(I must have been using way too much Unity lately, because this is one trippy dream.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -84,6 +84,8 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4){
+                JasonFrown.SetActive(false);
+                JasonNormal.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "(A landmark in the distance catches my eye. It looks like a dark gray protrusion on the horizon...)";
                 Char2name.text = "";
@@ -94,6 +96,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 5){
+                JasonNormal.SetActive(false);
+                JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "(Is... is that a tab?)";
                 Char2name.text = "";
@@ -116,7 +120,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 7){
                 Char1name.text = "Jason";
-                Char1speech.text = "(I should be able to find it if I go there))";
+                Char1speech.text = "(I should be able to find it if I go there.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -125,16 +129,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 8){
-                Char1name.text = "Jason";
-                Char1speech.text = "Haha let's hope they're not like you at all...";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
-        }
-        else if (primeInt == 9){
+                JasonSmile.SetActive(false);
+                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "(As I enter the console tab, the environment begins to darken and take on a reddish hue.)";
                 Char2name.text = "";
@@ -144,9 +140,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-        else if (primeInt == 10){
+        else if (primeInt == 9){
                 Char1name.text = "Jason";
-                Char1speech.text = "Well that's not a good sign...";
+                Char1speech.text = "Well, that's not a good sign...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -154,7 +150,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-        else if (primeInt == 11){
+        else if (primeInt == 10){
                  Char1name.text = "Jason";
                  Char1speech.text = "(The air begins to thicken, and long lines of matrix-like text begin dripping from the ceiling...)";
                  Char2name.text = "";
@@ -164,7 +160,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char4name.text = "";
                  Char4speech.text = "";
          }
-         else if (primeInt == 12){
+         else if (primeInt == 11){
+                  JasonFrown.SetActive(false);
+                  JasonSmile.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "Wow... this place might be ominous, but it definitely looks cool.";
                   Char2name.text = "";
@@ -174,7 +172,9 @@ public void talking(){         // main story function. Players hit next to progr
                   Char4name.text = "";
                   Char4speech.text = "";
           }
-          else if (primeInt == 13){
+          else if (primeInt == 12){
+                  JasonSmile.SetActive(false);
+                  JasonNormal.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "Now where is...";
                   Char2name.text = "";
@@ -184,7 +184,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char4name.text = "";
                   Char4speech.text = "";
           }
-          else if (primeInt == 14){
+          else if (primeInt == 13){
                    Char1name.text = "Jason";
                    Char1speech.text = "(As I turn a corner, the silhouette of something large and insectoid flashes past the edge of my vision...)";
                    Char2name.text = "";
@@ -194,7 +194,9 @@ public void talking(){         // main story function. Players hit next to progr
                    Char4name.text = "";
                    Char4speech.text = "";
           }
-          else if (primeInt == 15){
+          else if (primeInt == 14){
+                  JasonNormal.SetActive(false);
+                  JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "Great, I have to deal with literal bugs.";
                   Char2name.text = "";
@@ -204,7 +206,9 @@ public void talking(){         // main story function. Players hit next to progr
                   Char4name.text = "";
                   Char4speech.text = "";
           }
-          else if (primeInt == 16){
+          else if (primeInt == 15){
+                   JasonFrown.SetActive(false);
+                   JasonSmile.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "Oh well, at least it's not some kind of fairytale mon-";
                    Char2name.text = "";
@@ -214,39 +218,41 @@ public void talking(){         // main story function. Players hit next to progr
                    Char4name.text = "";
                    Char4speech.text = "";
           }
+          else if (primeInt == 16){
+                   JasonSmile.SetActive(false);
+                   JasonFrown.SetActive(true);
+                   Char1name.text = "Jason";
+                   Char1speech.text = "(A chill goes down my spine.)";
+                   Char2name.text = "";
+                   Char2speech.text = "";
+                   Char3name.text = "";
+                   Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
+          }
           else if (primeInt == 17){
-                  Char1name.text = "Jason";
-                  Char1speech.text = "(A chill goes down my spine.)";
-                  Char2name.text = "";
-                  Char2speech.text = "";
-                  Char3name.text = "";
-                  Char3speech.text = "";
-                  Char4name.text = "";
-                  Char4speech.text = "";
+                   Char1name.text = "Jason";
+                   Char1speech.text = "(That bug was the size of an ELEPHANT.)";
+                   Char2name.text = "";
+                   Char2speech.text = "";
+                   Char3name.text = "";
+                   Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
           }
           else if (primeInt == 18){
-                  Char1name.text = "Jason";
-                  Char1speech.text = "(That bug was the size of an ELEPHANT.)";
-                  Char2name.text = "";
-                  Char2speech.text = "";
-                  Char3name.text = "";
-                  Char3speech.text = "";
-                  Char4name.text = "";
-                  Char4speech.text = "";
-          }
-          else if (primeInt == 19){
-                  Char1name.text = "Jason";
-                  Char1speech.text = "(What should I do)";
-                  Char2name.text = "";
-                  Char2speech.text = "";
-                  Char3name.text = "";
-                  Char3speech.text = "";
-                  Char4name.text = "";
-                  Char4speech.text = "";
-                  NextButton.SetActive(false);
-                  allowSpace = false;
-                  Choice4a.SetActive(true);
-                  Choice4b.SetActive(true);
+                   Char1name.text = "Jason";
+                   Char1speech.text = "(What should I do)";
+                   Char2name.text = "";
+                   Char2speech.text = "";
+                   Char3name.text = "";
+                   Char3speech.text = "";
+                   Char4name.text = "";
+                   Char4speech.text = "";
+                   NextButton.SetActive(false);
+                   allowSpace = false;
+                   Choice4a.SetActive(true);
+                   Choice4b.SetActive(true);
           }
           // Choice 4a
           else if (primeInt == 100){
