@@ -17,7 +17,8 @@ public class DialogueScene3a : MonoBehaviour {
         public Text Char4name;
         public Text Char4speech;
         public GameObject DialogueDisplay;
-        public GameObject CubeyArt;
+        public GameObject ErrorMonsterArtTransparent;
+        public GameObject ErrorMonsterArt;
         public GameObject JasonFrown;
         public GameObject JasonSmile;
         public GameObject JasonNormal;
@@ -33,6 +34,8 @@ public class DialogueScene3a : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
+        ErrorMonsterArt.SetActive(false);
+        ErrorMonsterArtTransparent.SetActive(false);
         JasonFrown.SetActive(false);
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
@@ -61,6 +64,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
                 JasonSmile.SetActive(true);
+                ErrorMonsterArtTransparent.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "(I wander around what I assume to be the project panel, amazed at how, despite being two-dimensional, everything still feels... normal.)";
                 Char2name.text = "";
@@ -221,6 +225,8 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 16){
                    JasonSmile.SetActive(false);
                    JasonFrown.SetActive(true);
+                   ErrorMonsterArtTransparent.SetActive(false);
+                   ErrorMonsterArt.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "(A chill goes down my spine.)";
                    Char2name.text = "";
