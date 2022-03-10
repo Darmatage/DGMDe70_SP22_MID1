@@ -200,7 +200,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char2speech.text = "";
                   Char3name.text = "";
                   Char3speech.text = "";
-                  Char4name.text = "Blue Game Object";
+                  Char4name.text = "Blue Chief";
                   Char4speech.text = "Oh Great Creator from high above, please save us!";
           }
           else if (primeInt == 14){
@@ -220,7 +220,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char2speech.text = "";
                   Char3name.text = "";
                   Char3speech.text = "";
-                  Char4name.text = "Blue Game Object";
+                  Char4name.text = "Blue Chief";
                   Char4speech.text = "The errors! The errors have plagued us, breaking our parents and children! You must help us, O' Great Creator!";
           }
           else if (primeInt == 16){
@@ -230,7 +230,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
-                   Char4name.text = "Blue Game Object";
+                   Char4name.text = "Blue Chief";
                    Char4speech.text = "Come with me, great champion! I will show you the key to defeating the errors!";
           }
           else if (primeInt == 17){
@@ -296,7 +296,7 @@ public void talking(){         // main story function. Players hit next to progr
           // Choise 2b
           else if (primeInt == 200){
                    Char1name.text = "Jason";
-                   Char1speech.text = "Show me the way, Big Blue Game Object!";
+                   Char1speech.text = "Show me the way, Big Blue Chief!";
                    Char2name.text = "";
                    Char2speech.text = "";
                    Char3name.text = "";

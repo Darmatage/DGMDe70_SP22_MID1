@@ -94,7 +94,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Chief";
+                Char3name.text = "Blue Chief";
                 Char3speech.text = "Why it empowers the chosen one with ancient, godlike powers of creation, destruction, and manipulation!";
                 //gameHandler.AddPlayerStat(1);
         }
@@ -105,7 +105,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Chief";
+                Char3name.text = "Blue Chief";
                 Char3speech.text = "But be warned! Open it only at thy most opportune moment!";
         }
         else if (primeInt == 7){
@@ -115,7 +115,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Chief";
+                Char3name.text = "Blue Chief";
                 Char3speech.text = "For misuse of this artifact will bring calamity to us all!";
         }
         else if (primeInt == 8){
@@ -173,7 +173,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "";
                    Char2name.text = "";
                    Char2speech.text = "";
-                   Char3name.text = "Chief";
+                   Char3name.text = "Blue Chief";
                    Char3speech.text = "Indubitably! It is your fate! Now off you go!";
           }
           else if (primeInt == 15){
