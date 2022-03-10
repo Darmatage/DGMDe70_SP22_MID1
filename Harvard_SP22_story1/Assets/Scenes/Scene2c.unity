@@ -215,7 +215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064420347426054521, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7776196639609913910, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_Pivot.x
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7776196639609913910, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7776196639609913910, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_AnchorMax.x
@@ -576,11 +576,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
   m_PrefabInstance: {fileID: 340410927}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &537915392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4064420347426054521, guid: 23e57986481bc42558813be7285f14fc, type: 3}
-  m_PrefabInstance: {fileID: 111849812}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &537915396 stripped
 RectTransform:
@@ -2044,8 +2039,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 537915396}
   - {fileID: 1931856461}
+  - {fileID: 537915396}
   - {fileID: 970033678}
   - {fileID: 1200446509}
   - {fileID: 803431926}
@@ -2083,7 +2078,7 @@ MonoBehaviour:
   JasonFrown: {fileID: 1865918340}
   JasonSmile: {fileID: 2139575928}
   JasonNormal: {fileID: 1596295579}
-  ArtBG1: {fileID: 537915392}
+  ArtBG1: {fileID: 1931856460}
   Choice3a: {fileID: 2070574421}
   Choice3c: {fileID: 1314706250}
   NextScene3aButton: {fileID: 1650225010}
@@ -2687,12 +2682,12 @@ GameObject:
   - component: {fileID: 1931856463}
   - component: {fileID: 1931856462}
   m_Layer: 5
-  m_Name: HierarchyHallBG
+  m_Name: InspectorJungleBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1931856461
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2705,7 +2700,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1398224280}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2732,7 +2727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: be127584f01cb441891041d6affcb8f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68c7c813763a148e5a63cfbcb0e49697, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
