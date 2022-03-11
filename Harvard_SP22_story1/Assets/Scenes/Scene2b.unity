@@ -518,6 +518,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1398224280}
     m_Modifications:
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 098e432c64c434a04af4140c6053a93d, type: 2}
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 672365239}
     - target: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -912,6 +920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1017,6 +1029,11 @@ PrefabInstance:
 --- !u!224 &672365238 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+  m_PrefabInstance: {fileID: 672365237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &672365239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
   m_PrefabInstance: {fileID: 672365237}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &691131320
@@ -2939,7 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16078432, g: 0.15294118, b: 0.81960785, a: 1}
+  m_Color: {r: 0.16313636, g: 0.8367523, b: 0.8867924, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

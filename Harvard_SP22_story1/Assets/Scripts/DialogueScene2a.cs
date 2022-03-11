@@ -140,39 +140,57 @@ public void talking(){         // main story function. Players hit next to progr
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "Cubey";
-                  Char2speech.text = "It looks like you’re confused, Grandpa Clippy never died. Haven't you heard? He’s redebuting in Windows 11!";
+                  Char2speech.text = "It looks like you’re confused, Grandpa Clippy never died.";
           }
           else if (primeInt == 13){
+                   Char1name.text = "";
+                   Char1speech.text = "";
+                   Char2name.text = "Cubey";
+                   Char2speech.text = "Haven't you heard? He’s redebuting in Windows 11!";
+           }
+          else if (primeInt == 14){
                   Char1name.text = "Jason";
                   Char1speech.text = "Okay... Anyhow, what is this place? Am I dead? ... Am I condemned to purgatory in UNITY?!";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
-          else if (primeInt == 14){
+          else if (primeInt == 15){
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
-                   Char2speech.text = "It looks like you're agitated. Please calm down... You've just been transported into this build of Unity by some erroneous code... Would you like me to help?";
-          }
-          else if (primeInt == 15){
-                  Char1name.text = "Jason";
-                  Char1speech.text = "My gosh, you really are related to Clippy huh... Sure, help me out.";
-                  Char2name.text = "";
-                  Char2speech.text = "";
+                   Char2speech.text = "It looks like you're agitated. Please calm down...";
           }
           else if (primeInt == 16){
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
-                   Char2speech.text = "I recommend talking to the natives! They're sure to know the way out!";
+                   Char2speech.text = "You've just been transported into this build of Unity by some erroneous code...";
           }
           else if (primeInt == 17){
+                   Char1name.text = "";
+                   Char1speech.text = "";
+                   Char2name.text = "Cubey";
+                   Char2speech.text = "Would you like me to help?";
+          }
+          else if (primeInt == 18){
+                  Char1name.text = "Jason";
+                  Char1speech.text = "My gosh, you really are related to Clippy huh... Sure, help me out.";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+          }
+          else if (primeInt == 19){
+                   Char1name.text = "";
+                   Char1speech.text = "";
+                   Char2name.text = "Cubey";
+                   Char2speech.text = "I recommend talking to the natives! They're sure to know the way out!";
+          }
+          else if (primeInt == 20){
                   Char1name.text = "Jason";
                   Char1speech.text = "I can see this Clippy-relative getting on my nerves if I stay with him...";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
-          else if (primeInt == 18){
+          else if (primeInt == 21){
                   Char1name.text = "Jason";
                   Char1speech.text = "What should I do?";
                   Char2name.text = "";

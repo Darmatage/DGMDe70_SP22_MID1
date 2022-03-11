@@ -1178,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProjectPrairePortalBG
       objectReference: {fileID: 0}
+    - target: {fileID: 4064420347426054521, guid: 23e57986481bc42558813be7285f14fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7776196639609913910, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2086,6 +2090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2172,7 +2180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5311468243436644918, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5311468243777053805, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2184,7 +2192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5311468243919746459, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c155f4090769c4af0b5744ac3566eede, type: 3}

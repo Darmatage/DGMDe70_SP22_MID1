@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go back to Cubey.
+  m_Text: Wake up
 --- !u!222 &61101607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -389,6 +389,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1398224280}
     m_Modifications:
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 098e432c64c434a04af4140c6053a93d, type: 2}
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 1693764730}
     - target: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2047,6 +2055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2152,6 +2164,11 @@ PrefabInstance:
 --- !u!224 &1693764729 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+  m_PrefabInstance: {fileID: 1693764728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1693764730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
   m_PrefabInstance: {fileID: 1693764728}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719732654

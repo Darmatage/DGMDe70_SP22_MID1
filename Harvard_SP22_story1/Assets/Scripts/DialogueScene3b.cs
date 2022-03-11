@@ -21,6 +21,7 @@ public class DialogueScene3b : MonoBehaviour {
         public GameObject JasonSmile;
         public GameObject JasonNormal;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice4b;
         public GameObject Choice5b;
         public GameObject NextScene4bButton;
@@ -38,6 +39,7 @@ void Start(){         // initial visibility settings
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice4b.SetActive(false);
         Choice5b.SetActive(false);
         NextScene4bButton.SetActive(false);
@@ -120,7 +122,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 8){
                 JasonNormal.SetActive(false);
-                JasonSmile.SetActive(true);
+                JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "...";
                 Char2name.text = "";
@@ -259,6 +261,8 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
           }
           else if (primeInt == 25){
+                  ArtBG1.SetActive(false);
+                  ArtBG2.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "(We enter a dark cavern with glowing red text dripping from the cave ceilings.)";
                   Char2name.text = "";

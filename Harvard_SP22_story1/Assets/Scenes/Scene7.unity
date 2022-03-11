@@ -363,6 +363,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1398224280}
     m_Modifications:
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 098e432c64c434a04af4140c6053a93d, type: 2}
+    - target: {fileID: 2066384742264590443, guid: b8b3d438a38484382accffab355aab26, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 1936079990}
     - target: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1051,6 +1059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProjectPrairePortalBG
       objectReference: {fileID: 0}
+    - target: {fileID: 4064420347426054521, guid: 23e57986481bc42558813be7285f14fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7776196639609913910, guid: 23e57986481bc42558813be7285f14fc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1636,7 +1648,7 @@ MonoBehaviour:
   Char2name: {fileID: 1435012991}
   Char2speech: {fileID: 249617196}
   DialogueDisplay: {fileID: 1236586578}
-  ArtChar1: {fileID: 0}
+  ArtChar1: {fileID: 970033677}
   JasonFrown: {fileID: 1865918340}
   JasonSmile: {fileID: 2782212}
   JasonNormal: {fileID: 1027820069}
@@ -2182,6 +2194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2287,6 +2303,11 @@ PrefabInstance:
 --- !u!224 &1936079989 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+  m_PrefabInstance: {fileID: 1936079988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1936079990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5311468243313220580, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
   m_PrefabInstance: {fileID: 1936079988}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2070574421

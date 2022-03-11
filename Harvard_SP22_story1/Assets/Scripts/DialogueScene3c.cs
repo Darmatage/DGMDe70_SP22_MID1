@@ -152,6 +152,8 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 23){
                   Char1name.text = "Jason";
                   Char1speech.text = "Just... a little... bit... more...";
+                  allowSpace = false;
+                  NextButton.SetActive(false);
                   NextScene5aButton.SetActive(true);
           }
           // Choice 5a

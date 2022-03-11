@@ -77,7 +77,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonSmile.SetActive(false);
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Although if they all come to life like you do that might be a handful... I hope they are friendly.";
+                Char1speech.text = "(Although if they all come to life like Cubey does that might be a handful...)";
         }
         else if (primeInt == 7){
                 JasonFrown.SetActive(false);
