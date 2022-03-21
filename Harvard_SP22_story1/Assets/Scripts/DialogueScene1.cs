@@ -12,8 +12,6 @@ public class DialogueScene1 : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-        public Text Char3name;
-        public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject JasonFrown;
