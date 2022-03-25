@@ -66,6 +66,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Ahh it’s getting close to midnight, but I’ve still got to troubleshoot these student projects...";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 3){
                 ArtBG1.SetActive(false);
@@ -83,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Hmm, everything seems normal.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 5){
                 JasonNormal.SetActive(false);
@@ -98,6 +100,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "That should fix it now. Let’s see...";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("DoubleClickSound").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 7){
                 JasonSmile.SetActive(false);
@@ -112,6 +115,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Hmm... What’s this? I haven’t seen this kind of script before... Why does it look like it’s written in scrambled text?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm4").GetComponent<AudioSource>().Play();
                 // Choice1a.SetActive(true); // function Choice1aFunct()
                 // Choice1b.SetActive(true); // function Choice1bFunct()
         }
@@ -134,6 +138,7 @@ public void talking(){         // main story function. Players hit next to progr
                  NextButton.SetActive(false);
                  allowSpace = false;
                  NextSceneButton.SetActive(true);
+				 GameObject.Find("DoubleClickSound").GetComponent<AudioSource>().Play();
          }
      }
 
