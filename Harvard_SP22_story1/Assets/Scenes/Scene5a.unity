@@ -338,7 +338,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2076192236996847067, guid: b8b3d438a38484382accffab355aab26, type: 3}
       propertyPath: m_LocalScale.x
@@ -1435,8 +1435,8 @@ RectTransform:
   - {fileID: 1557911564}
   - {fileID: 970033678}
   - {fileID: 591690348}
-  - {fileID: 1664790248}
   - {fileID: 2070574422}
+  - {fileID: 1664790248}
   - {fileID: 1314706251}
   - {fileID: 1650225011}
   - {fileID: 1296265838}
@@ -1465,8 +1465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primeInt: 1
   Char1name: {fileID: 591690355}
-  Char1speech: {fileID: 591690354}
-  Char2name: {fileID: 591690353}
+  Char1speech: {fileID: 591690353}
+  Char2name: {fileID: 591690354}
   Char2speech: {fileID: 591690352}
   DialogueDisplay: {fileID: 591690351}
   JasonFrown: {fileID: 591690350}
@@ -1516,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5311468243313220581, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2122,7 +2122,7 @@ RectTransform:
   m_Children:
   - {fileID: 1282443929}
   m_Father: {fileID: 1398224280}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
