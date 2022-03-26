@@ -23,7 +23,9 @@ public class DialogueScene5b : MonoBehaviour {
         public GameObject JasonSmile;
         public GameObject JasonNormal;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject ConsoleCaveFadeBG;
+		public GameObject ConsoleCaveGreenFadeBG;
         public GameObject Choice6;
         public GameObject NextScene6Button;
         public GameObject NextButton;
@@ -41,7 +43,9 @@ void Start(){         // initial visibility settings
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtBG2.SetActive(false);
         ConsoleCaveFadeBG.SetActive(false);
+		ConsoleCaveGreenFadeBG.SetActive(false);
         Choice6.SetActive(false);
         NextScene6Button.SetActive(false);
         NextButton.SetActive(true);
@@ -184,6 +188,8 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 16){
                    // ErrorMonsterFadeArt.SetActive(true);
                    ErrorMonsterSideArt.SetActive(false);
+				   ArtBG1.SetActive(false);
+					ArtBG2.SetActive(true);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "";
@@ -277,7 +283,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 27){
                    ArtBG1.SetActive(false);
-                   ConsoleCaveFadeBG.SetActive(true);
+                   ConsoleCaveGreenFadeBG.SetActive(true);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "";

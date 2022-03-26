@@ -258,7 +258,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
-                   NextScene3cButton.SetActive(true);
+                   NextScene5bButton.SetActive(true);
           }
 
           // Choice 5b

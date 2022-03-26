@@ -153,7 +153,6 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 14){
                   JasonNormal.SetActive(false);
                   JasonFrown.SetActive(true);
-				  ErrorMonsterArtTransparent.SetActive(false);
                   Char1name.text = "Jason";
                   Char1speech.text = "Great, I have to deal with literal bugs.";
                   Char2name.text = "";
@@ -170,14 +169,14 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 16){
                    JasonSmile.SetActive(false);
                    JasonFrown.SetActive(true);
-				   ErrorMonsterArt.SetActive(true);
+                   ErrorMonsterArtTransparent.SetActive(false);
+                   ErrorMonsterArt.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "(A chill goes down my spine.)";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
           else if (primeInt == 17){
-					ErrorMonsterArt.SetActive(false);
                    Char1name.text = "Jason";
                    Char1speech.text = "(That bug was the size of an ELEPHANT.)";
                    Char2name.text = "";

@@ -635,7 +635,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I should bring \nCubey with me..."
+  m_Text: Assist each other until the very end!
 --- !u!222 &555746487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16167013, g: 0.15294115, b: 0.81960785, a: 1}
+  m_Color: {r: 0.16470589, g: 0.8352941, b: 0.8862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1630,9 +1630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cubey should sit
-
-    this one out...'
+  m_Text: It's dangerous... I think cubey should sit this one out...
 --- !u!222 &1282443931
 CanvasRenderer:
   m_ObjectHideFlags: 0

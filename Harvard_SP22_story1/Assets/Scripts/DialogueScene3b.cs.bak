@@ -132,7 +132,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 9){
                 Char1name.text = "Jason";
-                Char1speech.text = "(I take the scroll from the Game Object...)";
+                Char1speech.text = "(I took the scroll from the Game Object...)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -189,7 +189,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 16){
                   Char1name.text = "Jason";
-                  Char1speech.text = "(Strange... If it's so powerful, why didn't they use this scroll themselves?)";
+                  Char1speech.text = "(I'm starting to doubt my decision to listen to the game objects...)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
@@ -197,7 +197,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 17){
                   Char1name.text = "Jason";
-                  Char1speech.text = "(And why is it so new? It's almost as if it was just recently prepared...)";
+                  Char1speech.text = "(If it's so powerful, why didn't they use this scroll themselves?)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
@@ -230,7 +230,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 21){
                   Char1name.text = "Jason";
-                  Char1speech.text = "Haha, you really gotta do something about the way you speak cubey! Sure, lets assist each other until the very end!";
+                  Char1speech.text = "Yes, yes, Cubey, we will assist each other until the very end.";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
@@ -238,7 +238,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 22){
                   Char1name.text = "Jason";
-                  Char1speech.text = "(Despite the naturally annoying way Cubey is programmed to speak in... He's surprisingly wholesome.)";
+                  Char1speech.text = "(Despite the very annoying way Cubey is programmed to speak in... He's surprisingly wholesome.)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";

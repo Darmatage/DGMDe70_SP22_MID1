@@ -60,7 +60,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(true);
                 ErrorMonsterArtTransparent.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "(I cautiously sneak deeper into the depths of the error's den...)";
+                Char1speech.text = "(I cautiously enter deeper into the depths of the error's den...)";
                 Char2name.text = "";
                 Char2speech.text = "";
         }

@@ -51,16 +51,16 @@ public void talking(){         // main story function. Players hit next to progr
                 DialogueDisplay.SetActive(true);
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "(By the time I realize it, I’m already deep inside a dense, alien jungle.)";
+                Char1speech.text = "(By the time I realize it, I’m already deep inside this dense, alien jungle.)";
         }
         else if (primeInt == 3){
                 Char1name.text = "Jason";
-                Char1speech.text = "(Unlike the other places I’ve visited today, this place feels so much more... safe.)";
+                Char1speech.text = "(Unlike the other places I’ve visited today, this place feels so much more... inviting.)";
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4){
                 Char1name.text = "Jason";
-                Char1speech.text = "(And it’s beckoning for me to explore more.)";
+                Char1speech.text = "(The strange and complicated flora wave in the wind, as if beckoning for me to explore more.)";
         }
         else if (primeInt == 5){
                 JasonFrown.SetActive(false);
@@ -79,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(false);
                 JasonNormal.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Everything so far has been boring at best and downright crazy at worst.";
+                Char1speech.text = "Everything so far has been scripted NPC encounters... Where are the meaningful choices that give the player a sense of agency?!";
         }
         else if (primeInt == 8){
                 JasonNormal.SetActive(false);
@@ -101,7 +101,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 12){
                   Char1name.text = "Jason";
-                  Char1speech.text = "(I pull on a set of vines, and the whole forest seems to move, rotate, and transform at my will.)";
+                  Char1speech.text = "(I pull on a set of vines, and whole patches of the forest seem to move, rotate, and transform at my will.)";
           }
           else if (primeInt == 13){
                   Char1name.text = "Jason";
@@ -119,7 +119,7 @@ public void talking(){         // main story function. Players hit next to progr
                   JasonSmile.SetActive(false);
                   JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
-                  Char1speech.text = "(Like a newborn deity who’s been dropped into an infinite playground,)";
+                  Char1speech.text = "(I'm like a newborn deity who’s been dropped into an infinite playground,)";
           }
           else if (primeInt == 17){
                   Char1name.text = "Jason";

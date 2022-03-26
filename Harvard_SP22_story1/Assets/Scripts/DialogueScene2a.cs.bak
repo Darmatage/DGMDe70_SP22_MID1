@@ -192,7 +192,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 21){
                   Char1name.text = "Jason";
-                  Char1speech.text = "Looking around, we're currently standing in a vast prairie that kinda looks like the project panel... maybe I can find a script to teleport myself back?";
+                  Char1speech.text = "Looking around, we're currently standing in a vast prarie that kinda looks like the project panel... maybe I can find a script to teleport myself back?";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
