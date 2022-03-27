@@ -45,6 +45,7 @@ void Start(){         // initial visibility settings
         NextScene3cButton.SetActive(false);
         NextScene5bButton.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Console_Cave").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -69,6 +70,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(I slowly back away from the creature... but something sharp abruptly bumps into my back.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHurt2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 3){
                 ErrorMonsterArt.SetActive(false);
@@ -77,7 +79,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "?!?!";
                 Char2name.text = "";
                 Char2speech.text = "";
-
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4){
@@ -88,6 +89,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "Cubey";
                 Char2speech.text = "It seems like I finally found you Jason! Would you like some assistance today?";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("Cuby_Happy").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 5){
                 Char1name.text = "Jason";
@@ -101,6 +103,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(A mind curdling scream echoes through the cavern.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 7){
                 Char1name.text = "Jason";
@@ -119,24 +122,28 @@ public void talking(){         // main story function. Players hit next to progr
                   Char1speech.text = "Oh no oh no oh no, this is not what I signed up for!";
                   Char2name.text = "";
                   Char2speech.text = "";
+				  GameObject.Find("JasonNo2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 10){
                    Char1name.text = "Jason";
                    Char1speech.text = "(The red thing approaches us and shoots open its eyelids, revealing a huge unity error sign.)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 11){
                   Char1name.text = "Jason";
                   Char1speech.text = "(It unfurls and brandishes five long, pixelated tentacles.)";
                   Char2name.text = "";
                   Char2speech.text = "";
+				  GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 12){
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "Oh, it seems like we're in danger! Would you like me to assist you?";
+				   GameObject.Find("Cuby_Startled").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 13){
                    Char1name.text = "Jason";
@@ -149,18 +156,21 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "(The error creature advances towards us with terrifying speed, and before I know it, it's preparing to pounce on us.)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 15){
                    Char1name.text = "Jason";
                    Char1speech.text = "...!";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 16){
                    Char1name.text = "Jason";
                    Char1speech.text = "(The sharp sound of metal being twisted is followed by a fleshy howl)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("Error_Hurt").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 17){
                    Char1name.text = "Jason";
@@ -173,6 +183,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "(Cubey has transformed into a sharp spear and has plunged himself into the monster!)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 19){
                    Char1name.text = "Jason";
@@ -185,12 +196,14 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "(The monster violently pulls cubey out of itself and retreats into the darkness.)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("Error_Hurt").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 21){
                    Char1name.text = "Jason";
-                   Char1speech.text = "Cubey! Are you okay Cubey!?";
+                   Char1speech.text = "Nooo Cubey! Are you okay Cubey!?";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("JasonNo2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 22){
                    Char1name.text = "Jason";
@@ -209,18 +222,21 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "*cough* *cough* It seems like... I've assisted you... today... *cough*";
+				   GameObject.Find("Cuby_Sad").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 25){
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "It seems like... the error... will return soon...";
+				   GameObject.Find("Cuby_Sad").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 26){
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "Cubey";
                    Char2speech.text = "Would you... please... escape... and go without me...";
+				   GameObject.Find("Cuby_Sad").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 27){
                    Char1name.text = "Jason";
@@ -238,6 +254,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "(And who knows, what if you die in the game, you die in real life!)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("JasonHurt2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 101){
                    Char1name.text = "Jason";

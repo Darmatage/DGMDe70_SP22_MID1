@@ -43,6 +43,7 @@ void Start(){         // initial visibility settings
         NextScene4aButton.SetActive(false);
         NextScene4bButton.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -66,6 +67,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(I wander around what I assume to be the project panel, amazed at how, despite being two-dimensional, everything still feels... normal.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 3){
                 JasonSmile.SetActive(false);
@@ -114,12 +116,15 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(As I enter the console tab, the environment begins to darken and take on a reddish hue.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Stop();
+				GameObject.Find("Console_Cave").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 9){
                 Char1name.text = "Jason";
                 Char1speech.text = "Well, that's not a good sign...";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 10){
                  Char1name.text = "Jason";
@@ -134,6 +139,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char1speech.text = "Wow... this place might be ominous, but it definitely looks cool.";
                   Char2name.text = "";
                   Char2speech.text = "";
+				  GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 12){
                   JasonSmile.SetActive(false);
@@ -158,6 +164,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char1speech.text = "Great, I have to deal with literal bugs.";
                   Char2name.text = "";
                   Char2speech.text = "";
+				  GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 15){
                    JasonFrown.SetActive(false);
@@ -175,6 +182,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char1speech.text = "(A chill goes down my spine.)";
                    Char2name.text = "";
                    Char2speech.text = "";
+				   GameObject.Find("JasonHurt2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 17){
 					ErrorMonsterArt.SetActive(false);
@@ -192,6 +200,7 @@ public void talking(){         // main story function. Players hit next to progr
                    allowSpace = false;
                    Choice4a.SetActive(true);
                    Choice4b.SetActive(true);
+				   GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
           }
           // Choice 4a
           else if (primeInt == 100){

@@ -37,6 +37,7 @@ void Start(){         // initial visibility settings
         Choice7.SetActive(false);
         NextScene7Button.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Hierarchy_Hall").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -71,6 +72,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "The skies have cleared! The seas are cleansed!";
                 Char3name.text = "";
                 Char3speech.text = "";
+				GameObject.Find("Native_Startled").GetComponent<AudioSource>().Play();
 
                 //gameHandler.AddPlayerStat(1);
         }
@@ -82,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3name.text = "";
                 Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("Native_Talk").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 5){
                 Char1name.text = "";
@@ -90,6 +93,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Come! We must celebrate!";
                 Char3name.text = "";
                 Char3speech.text = "";
+				GameObject.Find("Native_Talk").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 6){
                 Char1name.text = "Jason";
@@ -130,6 +134,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    Char3name.text = "";
                    Char3speech.text = "";
+				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 11){
                   Char1name.text = "Jason";

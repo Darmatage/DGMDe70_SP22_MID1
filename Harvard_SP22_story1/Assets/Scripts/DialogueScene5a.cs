@@ -56,6 +56,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(I lurch up from my desk in a cold sweat.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHurt2").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 3){
                 Char1name.text = "Jason";
@@ -80,6 +81,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 6){
                 Char1name.text = "Jason";
@@ -94,6 +96,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "I must have fallen asleep with exhaustion at the sheer sight of it.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 8){
                 Char1name.text = "Jason";
@@ -104,6 +107,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 9){
                 Char1name.text = "Jason";
                 Char1speech.text = "Let's check the files again...";
+				GameObject.Find("JasonHmm2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 10){
                  JasonNormal.SetActive(false);
@@ -116,6 +120,7 @@ public void talking(){         // main story function. Players hit next to progr
          else if (primeInt == 11){
                  Char1name.text = "Jason";
                  Char1speech.text = "It seems like the unity project with the crazy code...";
+				 GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
          }
          else if (primeInt == 12){
                  Char1name.text = "Jason";
@@ -132,6 +137,7 @@ public void talking(){         // main story function. Players hit next to progr
          else if (primeInt == 15){
                  Char1name.text = "Jason";
                  Char1speech.text = "That... was a dream, right?";
+				 GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
          }
          else if (primeInt == 16){
                  JasonFrown.SetActive(false);
@@ -146,6 +152,7 @@ public void talking(){         // main story function. Players hit next to progr
          else if (primeInt == 18){
                  Char1name.text = "Jason";
                  Char1speech.text = "I should just go to bed.";
+				 GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
          }
          else if (primeInt == 19){
                  ArtBG1.SetActive(false);

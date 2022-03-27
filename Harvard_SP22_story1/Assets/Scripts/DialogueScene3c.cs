@@ -31,6 +31,7 @@ void Start(){         // initial visibility settings
         // Choice5a.SetActive(false);
         NextScene5aButton.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Jungle_Search").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -74,6 +75,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "If I’m in a game engine, the point should be to have fun, right?";
+				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 7){
                 JasonFrown.SetActive(false);
@@ -98,6 +100,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 11){
                  Char1name.text = "Jason";
                  Char1speech.text = "Oh wow, you know what, this is so much easier than I thought!";
+				 GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
          }
          else if (primeInt == 12){
                   Char1name.text = "Jason";
@@ -106,6 +109,7 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 13){
                   Char1name.text = "Jason";
                   Char1speech.text = "Haha now that’s what I’m talking about! Finally time for some fun!";
+				  GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 14){
                    Char1name.text = "Jason";
@@ -120,6 +124,7 @@ public void talking(){         // main story function. Players hit next to progr
                   JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "(I'm like a newborn deity who’s been dropped into an infinite playground,)";
+				  GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 17){
                   Char1name.text = "Jason";
@@ -132,6 +137,7 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 19){
                   Char1name.text = "Jason";
                   Char1speech.text = "Hahahaha!";
+				  GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 20){
                   Char1name.text = "Jason";
@@ -155,6 +161,7 @@ public void talking(){         // main story function. Players hit next to progr
                   allowSpace = false;
                   NextButton.SetActive(false);
                   NextScene5aButton.SetActive(true);
+				  GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
           }
           // Choice 5a
           else if (primeInt == 100){

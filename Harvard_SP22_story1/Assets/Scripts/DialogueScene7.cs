@@ -60,6 +60,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "(I hear a strange whooshing sound, and I lift my head from my desk abruptly.)";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHurt2").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 3){
                 Char1name.text = "Jason";
@@ -67,6 +68,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 4){
                 JasonFrown.SetActive(false);
@@ -82,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 6){
                 JasonNormal.SetActive(false);
@@ -96,6 +99,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "In front of me is a clean, well organized Unity project.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm2").GetComponent<AudioSource>().Play();
         }
        else if (primeInt == 8){
                 Char1name.text = "Jason";
@@ -112,6 +116,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Strangely enough, it isn’t made by any of the students though…";
                 Char2name.text = "";
                 Char2speech.text = "";
+				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 10){
                  JasonNormal.SetActive(false);
@@ -135,6 +140,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "(I feel a strong nostalgic urge to install Windows 11 first thing in the morning tomorrow.)";
                  Char2name.text = "";
                  Char2speech.text = "";
+				 GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
          }
          else if (primeInt == 13){
                  Char1name.text = "Jason";

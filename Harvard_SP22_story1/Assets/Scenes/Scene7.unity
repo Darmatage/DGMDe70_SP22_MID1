@@ -1181,9 +1181,9 @@ MonoBehaviour:
   Char2speech: {fileID: 1771049972}
   DialogueDisplay: {fileID: 1771049971}
   ArtChar1: {fileID: 970033677}
-  JasonFrown: {fileID: 1771049970}
-  JasonSmile: {fileID: 1771049969}
-  JasonNormal: {fileID: 1771049967}
+  JasonFrown: {fileID: 2009039006}
+  JasonSmile: {fileID: 184737696}
+  JasonNormal: {fileID: 1307570166}
   ArtBG1: {fileID: 1553731683}
   NextSceneEndWinButton: {fileID: 1650225010}
   NextButton: {fileID: 1640037957}
@@ -1694,24 +1694,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3471eb74b6feb478492493ddd6d146af, type: 3}
---- !u!1 &1771049967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 641267963663089169, guid: 3471eb74b6feb478492493ddd6d146af, type: 3}
-  m_PrefabInstance: {fileID: 1771049966}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1771049968 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 641267963983193191, guid: 3471eb74b6feb478492493ddd6d146af, type: 3}
-  m_PrefabInstance: {fileID: 1771049966}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1771049969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 641267962766999600, guid: 3471eb74b6feb478492493ddd6d146af, type: 3}
-  m_PrefabInstance: {fileID: 1771049966}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1771049970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 641267964427703216, guid: 3471eb74b6feb478492493ddd6d146af, type: 3}
   m_PrefabInstance: {fileID: 1771049966}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771049971 stripped
