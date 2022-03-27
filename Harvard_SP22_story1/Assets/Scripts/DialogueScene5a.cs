@@ -60,7 +60,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 3){
                 Char1name.text = "Jason";
-                Char1speech.text = "(I instinctively check my leg... and it's fine.)";
+                Char1speech.text = "(I instinctively check my body... and it's back to normal.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -77,7 +77,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonNormal.SetActive(false);
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Well, that was a real nightmare.";
+                Char1speech.text = "Well that was an intense...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
