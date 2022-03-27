@@ -53,6 +53,7 @@ void Start(){         // initial visibility settings
         NextScene3bButton.SetActive(false);
         NextScene2cButton.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -80,6 +81,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
                 Char4name.text = "";
                 Char4speech.text = "";
+				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 3){
                 Char1name.text = "Jason";
@@ -102,6 +104,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
                 Char4name.text = "";
                 Char4speech.text = "";
+				GameObject.Find("Cuby_Happy").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 5){
                 JasonFrown.SetActive(false);
@@ -115,6 +118,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4name.text = "";
                 Char4speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 6){
                 JasonSmile.SetActive(false);
@@ -137,6 +141,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
                 Char4name.text = "";
                 Char4speech.text = "";
+				GameObject.Find("Cuby_Talk").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 8){
                 Char1name.text = "Jason";
@@ -147,6 +152,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
                 Char4name.text = "";
                 Char4speech.text = "";
+				GameObject.Find("JasonHmm2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 9){
                 ArtBG1.SetActive(false);
@@ -159,6 +165,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
                 Char4name.text = "";
                 Char4speech.text = "";
+				GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Stop();
+				GameObject.Find("Hierarchy_Hall").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 10){
                 Char1name.text = "Jason";
@@ -182,7 +190,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 12){
                   Char1name.text = "Jason";
-                  Char1speech.text = "As I approach one of the cubes, they all come to life and begin to glow brightly, some of which are a sickeningly saturated red color.";
+                  Char1speech.text = "(As I approach one of the cubes, they all come to life and begin to glow brightly, some of which are a sickeningly saturated red color.)";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
@@ -202,6 +210,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
                   Char4name.text = "Blue Chief";
                   Char4speech.text = "Oh Great Creator from high above, please save us!";
+				  GameObject.Find("Native_Sad").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 14){
                    Char1name.text = "Jason";
@@ -212,6 +221,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    Char4name.text = "";
                    Char4speech.text = "";
+				   GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 15){
                   Char1name.text = "";
@@ -222,6 +232,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
                   Char4name.text = "Blue Chief";
                   Char4speech.text = "The errors! The errors have plagued us, breaking our parents and children! You must help us, O' Great Creator!";
+				  GameObject.Find("Native_Startled").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 16){
                    Char1name.text = "";
@@ -232,6 +243,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    Char4name.text = "Blue Chief";
                    Char4speech.text = "Come with me, great champion! I will show you the key to defeating the errors!";
+				   GameObject.Find("Native_Talk").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 17){
                   Char1name.text = "";
@@ -242,6 +254,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
                   Char4name.text = "";
                   Char4speech.text = "";
+				  GameObject.Find("Cuby_Startled").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 18){
                   Char1name.text = "Jason";
@@ -278,6 +291,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    Char4name.text = "";
                    Char4speech.text = "";
+				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 101){
                    Char1name.text = "Jason";
@@ -306,6 +320,7 @@ public void talking(){         // main story function. Players hit next to progr
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene3bButton.SetActive(true);
+				   GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
           }
 
           // Choise 2c
@@ -318,6 +333,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    Char4name.text = "";
                    Char4speech.text = "";
+				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 301){
                    Char1name.text = "";
@@ -331,6 +347,7 @@ public void talking(){         // main story function. Players hit next to progr
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene2cButton.SetActive(true);
+				   GameObject.Find("Cuby_Talk").GetComponent<AudioSource>().Play();
           }
      }
 
