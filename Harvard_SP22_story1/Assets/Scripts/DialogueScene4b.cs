@@ -18,7 +18,6 @@ public class DialogueScene4b : MonoBehaviour {
         public GameObject JasonFrown;
         public GameObject JasonSmile;
         public GameObject JasonNormal;
-        public GameObject ArtBG0;
         public GameObject ArtBG1;
         public GameObject FadingBG;
         public GameObject Choice5a;
@@ -36,8 +35,7 @@ void Start(){         // initial visibility settings
         JasonFrown.SetActive(false);
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
-        ArtBG0.SetActive(true);
-        ArtBG1.SetActive(false);
+        ArtBG1.SetActive(true);
         FadingBG.SetActive(false);
         Choice5a.SetActive(false);
         NextScene5aButton.SetActive(false);
@@ -100,8 +98,6 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6){
-                ArtBG0.SetActive(false);
-                ArtBG1.SetActive(true);
                 ErrorMonsterArtTransparent.SetActive(false);
                 ErrorMonsterArt.SetActive(true);
                 Char1name.text = "Jason";

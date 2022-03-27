@@ -678,8 +678,9 @@ GameObject:
   - component: {fileID: 376126707}
   - component: {fileID: 376126709}
   - component: {fileID: 376126708}
+  - component: {fileID: 376126710}
   m_Layer: 5
-  m_Name: ConsoleCaveErrorBG
+  m_Name: CaveErrorBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,6 +743,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376126706}
   m_CullTransparentMesh: 1
+--- !u!95 &376126710
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376126706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6efd0017ec879c34fa9e7389402c6aa0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &446628415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,7 +839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428034706455766252, guid: 36ef04661f2e23d4cb2c358e2fa3ee1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -331.5
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 428034706455766252, guid: 36ef04661f2e23d4cb2c358e2fa3ee1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1025,8 +1045,9 @@ GameObject:
   - component: {fileID: 639824441}
   - component: {fileID: 639824440}
   - component: {fileID: 639824439}
+  - component: {fileID: 639824442}
   m_Layer: 5
-  m_Name: ConsoleCaveFixedBG
+  m_Name: CaveFixedBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,7 +1073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88af970910c104c55a44a89e7c3b8087, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 331320694057bb446913aafa365dc238, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1089,6 +1110,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &639824442
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639824438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05588914476981347b49e3e4599f949e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &803780020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88af970910c104c55a44a89e7c3b8087, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2d32a4be92cfc647bf832bb24de5d04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
