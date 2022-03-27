@@ -15,6 +15,7 @@ public class DialogueScene2c : MonoBehaviour {
         public GameObject JasonSmile;
         public GameObject JasonNormal;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice3a;
         public GameObject Choice3c;
         public GameObject NextScene3aButton;
@@ -29,12 +30,14 @@ void Start(){         // initial visibility settings
         JasonFrown.SetActive(false);
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
+		ArtBG2.SetActive(true);
         Choice3a.SetActive(false);
         Choice3c.SetActive(false);
         NextScene3aButton.SetActive(false);
         NextScene3cButton.SetActive(false);
         NextButton.SetActive(true);
+		GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Play();
    }
 
 void Update(){         // use spacebar as Next button
@@ -61,10 +64,15 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "Jason";
                 Char1speech.text = "I wonder what that could be?";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 4){
-                Char1name.text = "Jason";
+                ArtBG1.SetActive(true);
+				ArtBG2.SetActive(false);
+				Char1name.text = "Jason";
                 Char1speech.text = "(As I walk towards it, the scenery quickly changes to that of a lush jungle, filled with strange trees and large fungi.)";
+				GameObject.Find("Project_Prairie").GetComponent<AudioSource>().Stop();
+				GameObject.Find("Jungle_Search").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 5){
                 JasonFrown.SetActive(false);
@@ -72,6 +80,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "Jason";
                 Char1speech.text = "Whoa...";
                 //gameHandler.AddPlayerStat(1);
+				GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 6){
                 JasonSmile.SetActive(false);
@@ -90,6 +99,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "Is... is this a rigid body? And is that a collider?";
+				GameObject.Find("JasonHmm2").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 9){
                 Char1name.text = "Jason";
@@ -98,6 +108,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 10){
                 Char1name.text = "Jason";
                 Char1speech.text = "No way...";
+				GameObject.Find("JasonWow1").GetComponent<AudioSource>().Play();
         }
         else if (primeInt == 11){
                  Char1name.text = "Jason";
@@ -106,6 +117,7 @@ public void talking(){         // main story function. Players hit next to progr
          else if (primeInt == 12){
                   Char1name.text = "Jason";
                   Char1speech.text = "This is amazing!";
+				  GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 13){
                   Char1name.text = "Jason";
@@ -124,6 +136,7 @@ public void talking(){         // main story function. Players hit next to progr
                   JasonFrown.SetActive(true);
                   Char1name.text = "Jason";
                   Char1speech.text = "I could definitely see myself getting carried away with this...";
+				  GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 17){
                   Char1name.text = "Jason";
@@ -140,6 +153,7 @@ public void talking(){         // main story function. Players hit next to progr
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene3aButton.SetActive(true);
+				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
 
           // Choise 3c
@@ -149,6 +163,7 @@ public void talking(){         // main story function. Players hit next to progr
                    NextButton.SetActive(false);
                    allowSpace = false;
                    NextScene3cButton.SetActive(true);
+				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
      }
 

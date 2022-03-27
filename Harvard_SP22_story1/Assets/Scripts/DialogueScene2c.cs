@@ -86,7 +86,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonSmile.SetActive(false);
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "(Although if they all come to life like Cubey does that might be a handful...)";
+                Char1speech.text = "(I can faintly see lines of text deep in the jungle... and it reminds me of the inspector tab.)";
         }
         else if (primeInt == 7){
                 JasonFrown.SetActive(false);
@@ -116,7 +116,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 12){
                   Char1name.text = "Jason";
-                  Char1speech.text = "This is amazing!";
+                  Char1speech.text = "This is amazing! This place must be the Inspector!";
 				  GameObject.Find("JasonWow2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 13){
