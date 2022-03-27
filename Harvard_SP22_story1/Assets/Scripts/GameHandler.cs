@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour{
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioMixer mixer;
-        public static float volumeLevel = 1.0f;
+        public static float volumeLevel = 0.6f;
         private Slider sliderVolumeCtrl;
 
         void Awake (){

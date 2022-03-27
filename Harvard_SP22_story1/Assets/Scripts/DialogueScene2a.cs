@@ -32,6 +32,7 @@ public class DialogueScene2a : MonoBehaviour {
         // public GameHandler gameHandler;
         // public AudioSource audioSource;
         private bool allowSpace = true;
+		private bool skip = false;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -60,6 +61,17 @@ void Update(){         // use spacebar as Next button
                 }
         }
    }
+
+public void skipmode(){
+	if (skip == true) {
+		CancelInvoke();
+		skip = false;
+	}
+	else {
+		skip = true;
+		InvokeRepeating("talking", 0, 0.1F);
+	}
+}
 
 //Story Units:
 public void talking(){         // main story function. Players hit next to progress to next int
@@ -225,6 +237,8 @@ public void talking(){         // main story function. Players hit next to progr
                   Char2speech.text = "";
                   NextButton.SetActive(false);
                   allowSpace = false;
+				  skip = false;
+				  CancelInvoke();
                   Choice3a.SetActive(true);
                   Choice2b.SetActive(true);
                   Choice2c.SetActive(true);
@@ -244,6 +258,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene3aButton.SetActive(true);
           }
 
@@ -262,6 +278,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "Great! Let's be on our way.";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene2bButton.SetActive(true);
 				   GameObject.Find("Cuby_Happy").GetComponent<AudioSource>().Play();
           }
@@ -283,6 +301,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "Wait! Come back! Don't go off on your own, Jason!";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene2cButton.SetActive(true);
 				   GameObject.Find("Cuby_Startled").GetComponent<AudioSource>().Play();
           }

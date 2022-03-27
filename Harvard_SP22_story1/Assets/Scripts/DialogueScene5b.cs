@@ -32,6 +32,7 @@ public class DialogueScene5b : MonoBehaviour {
         // public GameHandler gameHandler;
         // public AudioSource audioSource;
         private bool allowSpace = true;
+		private bool skip = false;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -60,6 +61,17 @@ void Update(){         // use spacebar as Next button
                 }
         }
    }
+
+public void skipmode(){
+	if (skip == true) {
+		CancelInvoke();
+		skip = false;
+	}
+	else {
+		skip = true;
+		InvokeRepeating("talking", 0, 0.1F);
+	}
+}
 
 //Story Units:
 public void talking(){         // main story function. Players hit next to progress to next int
@@ -311,6 +323,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene6Button.SetActive(true);
           }
           // Choice 3c
@@ -348,6 +362,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene6Button.SetActive(true);
           }
 
@@ -361,6 +377,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "";
                    NextButton.SetActive(false);
                    allowSpace = false;
+				   skip = false;
+				   CancelInvoke();
                    NextScene6Button.SetActive(true);
 				   GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
           }
