@@ -16,6 +16,8 @@ public class DialogueScene5b : MonoBehaviour {
         public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject CubeyArt;
+               public GameObject CubeySphere;
+               public GameObject CubeyDead;
         public GameObject ErrorMonsterArt;
         public GameObject ErrorMonsterSideArt;
         // public GameObject ErrorMonsterFadeArt;
@@ -40,6 +42,8 @@ void Start(){         // initial visibility settings
         ErrorMonsterSideArt.SetActive(false);
         // ErrorMonsterFadeArt.SetActive(false);
         CubeyArt.SetActive(false);
+             CubeySphere.SetActive(false);
+             CubeyDead.SetActive(false);
         JasonFrown.SetActive(false);
         JasonSmile.SetActive(false);
         JasonNormal.SetActive(false);
@@ -174,6 +178,10 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
           }
           else if (primeInt == 12){
+                  ArtBG1.SetActive(false);
+                  ConsoleCaveFadeBG.SetActive(true);
+                  CubeyArt.SetActive(false);
+                        CubeySphere.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "Hya!";
                    Char2name.text = "";
@@ -211,7 +219,7 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt == 16){
                    // ErrorMonsterFadeArt.SetActive(true);
                    ErrorMonsterSideArt.SetActive(false);
-				   ArtBG1.SetActive(false);
+				        ConsoleCaveFadeBG.SetActive(false);
 					ArtBG2.SetActive(true);
                    Char1name.text = "";
                    Char1speech.text = "";
@@ -252,6 +260,8 @@ public void talking(){         // main story function. Players hit next to progr
 				   GameObject.Find("JasonNo2").GetComponent<AudioSource>().Play();
           }
           else if (primeInt == 20){
+                     CubeySphere.SetActive(false);
+                     CubeyDead.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "(Upon closer inspection, Cubey's frail little body has been devastated by the battle...)";
                    Char2name.text = "";

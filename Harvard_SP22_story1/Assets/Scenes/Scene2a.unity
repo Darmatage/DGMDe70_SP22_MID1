@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubey_Transform
       objectReference: {fileID: 0}
+    - target: {fileID: 6377441028884136151, guid: cb429bd7675a6476eaa34f0c5ddb347d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1e71562e93d4a0c4686d421cb3247d5c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb429bd7675a6476eaa34f0c5ddb347d, type: 3}
 --- !u!1 &315065898
@@ -966,6 +970,7 @@ GameObject:
   - component: {fileID: 970033678}
   - component: {fileID: 970033680}
   - component: {fileID: 970033679}
+  - component: {fileID: 970033681}
   m_Layer: 5
   m_Name: CubeyArt
   m_TagString: Untagged
@@ -1012,7 +1017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d13448a6abecc4e2eb43d94179dbf827, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d798e84d2b9a204e9775aa63b342fb7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1030,6 +1035,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970033677}
   m_CullTransparentMesh: 1
+--- !u!95 &970033681
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970033677}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d26ceb61f52619642b615fbed1e8977e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &992935389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1208,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428034706455766252, guid: 36ef04661f2e23d4cb2c358e2fa3ee1d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -250
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 428034706455766252, guid: 36ef04661f2e23d4cb2c358e2fa3ee1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
