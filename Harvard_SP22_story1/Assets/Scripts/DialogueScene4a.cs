@@ -86,7 +86,6 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 3){
                 ErrorMonsterArt.SetActive(false);
-                CubeyTransform.SetActive(true);
                 Char1name.text = "Jason";
                 Char1speech.text = "?!?!";
                 Char2name.text = "";
@@ -94,7 +93,6 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4){
-                CubeyTransform.SetActive(false);
                 CubeyArt.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -191,6 +189,8 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
           }
           else if (primeInt == 18){
+					CubeyArt.SetActive(false);
+					CubeyTransform.SetActive(true);
                    Char1name.text = "Jason";
                    Char1speech.text = "(Cubey has transformed into a sharp spear and has plunged himself into the monster!)";
                    Char2name.text = "";
