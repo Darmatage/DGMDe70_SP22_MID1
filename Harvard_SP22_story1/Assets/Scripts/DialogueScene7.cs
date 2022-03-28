@@ -92,7 +92,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 5){
                 Char1name.text = "Jason";
-                Char1speech.text = "But… now that I’m trying to remember, I can’t recall any details…";
+                Char1speech.text = "But... now that I'm trying to remember, I can't recall any details...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -115,7 +115,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 8){
                 Char1name.text = "Jason";
-                Char1speech.text = "It has lots of colorful pixel art assets and is totally error free…";
+                Char1speech.text = "It has lots of colorful pixel art assets and is totally error free...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Choice1a.SetActive(true); // function Choice1aFunct()
@@ -125,7 +125,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonSmile.SetActive(false);
                 JasonNormal.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Strangely enough, it isn’t made by any of the students though…";
+                Char1speech.text = "Strangely enough, it isn't made by any of the students though...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				GameObject.Find("JasonHmm3").GetComponent<AudioSource>().Play();
@@ -134,7 +134,7 @@ public void talking(){         // main story function. Players hit next to progr
                  JasonNormal.SetActive(false);
                  JasonSmile.SetActive(true);
                  Char1name.text = "Jason";
-                 Char1speech.text = "(Satisfied, mystified, and a bit sad for some reason, I close unity and head off to bed…)";
+                 Char1speech.text = "(Satisfied, mystified, and a bit sad for some reason, I close unity and head off to bed...)";
                  Char2name.text = "";
                  Char2speech.text = "";
                  NextButton.SetActive(false);
@@ -156,7 +156,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 13){
                  Char1name.text = "Jason";
-                 Char1speech.text = "(Although Windows 11 is fresh out of the bakery, I feel that I’ll meet an old friend there for some reason…)";
+                 Char1speech.text = "(Although Windows 11 is fresh out of the bakery, I feel that I'll meet an old friend there for some reason...)";
                  Char2name.text = "";
                  Char2speech.text = "";
          }

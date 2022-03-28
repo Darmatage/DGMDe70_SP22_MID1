@@ -111,7 +111,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cubey";
-                Char2speech.text = "It looks like you’re curious! The natives who inhabit this land are the Game Objects. They come in many shapes and sizes, and they can do all sorts of interesting things.";
+                Char2speech.text = "It looks like you're curious! The natives who inhabit this land are the Game Objects. They come in many shapes and sizes, and they can do all sorts of interesting things.";
                 Char3name.text = "";
                 Char3speech.text = "";
                 Char4name.text = "";
@@ -122,7 +122,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(false);
                 JasonSmile.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Game Objects? I’m familiar with those...";
+                Char1speech.text = "Game Objects? I'm familiar with those...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -157,7 +157,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 8){
                 Char1name.text = "Jason";
-                Char1speech.text = "Haha let’s hope they’re a bit more helpful than you are pal.";
+                Char1speech.text = "Haha let's hope they're a bit more helpful than you are pal.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -226,7 +226,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 14){
                    Char1name.text = "Jason";
-                   Char1speech.text = "...me? Great creator? Well that’s an interesting way to put it... What's wrong?";
+                   Char1speech.text = "...me? Great creator? Well that's an interesting way to put it... What's wrong?";
                    Char2name.text = "";
                    Char2speech.text = "";
                    Char3name.text = "";

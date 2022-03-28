@@ -918,6 +918,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 5311468242758077375, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 340410928}
+    - target: {fileID: 5311468242758077375, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 5311468243002912263, guid: c155f4090769c4af0b5744ac3566eede, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

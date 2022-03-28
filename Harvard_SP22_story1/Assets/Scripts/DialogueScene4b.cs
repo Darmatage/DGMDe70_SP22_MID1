@@ -114,7 +114,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 8){
                 Char1name.text = "Jason";
-                Char1speech.text = "(It has a large bulbous head with four… no, five limbs holding it up...)";
+                Char1speech.text = "(It has a large bulbous head with four... no, five limbs holding it up...)";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -138,13 +138,13 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 12){
                    Char1name.text = "Jason";
-                   Char1speech.text = "(It towers over me like an impossible boss from a Souls-like game…)";
+                   Char1speech.text = "(It towers over me like an impossible boss from a Souls-like game...)";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
           else if (primeInt == 13){
                   Char1name.text = "Jason";
-                  Char1speech.text = "But I’ve got the jump on it…";
+                  Char1speech.text = "But I've got the jump on it...";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
@@ -221,13 +221,13 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 24){
                    Char1name.text = "Jason";
-                   Char1speech.text = "(I jump out of the way, but it manages to clip my leg…)";
+                   Char1speech.text = "(I jump out of the way, but it manages to clip my leg...)";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
           else if (primeInt == 25){
                    Char1name.text = "Jason";
-                   Char1speech.text = "(I’m not bleeding, but my leg is now missing a big chunk of its pixels…)";
+                   Char1speech.text = "(I'm not bleeding, but my leg is now missing a big chunk of its pixels...)";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
@@ -240,7 +240,7 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 27){
                    Char1name.text = "Jason";
-                   Char1speech.text = "(It’s painful when I try to move it…)";
+                   Char1speech.text = "(It's painful when I try to move it...)";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
@@ -279,13 +279,13 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 33){
                    Char1name.text = "Jason";
-                   Char1speech.text = "Oh no... no… wai-!";
+                   Char1speech.text = "Oh no... no... wai-!";
                    Char2name.text = "";
                    Char2speech.text = "";
           }
           else if (primeInt == 34){
                    Char1name.text = "Jason";
-                   Char1speech.text = "(A torrent of tentacles engulf me, followed by the disintegration of all of my pixels…)";
+                   Char1speech.text = "(A torrent of tentacles engulf me, followed by the disintegration of all of my pixels...)";
                    Char2name.text = "";
                    Char2speech.text = "";
 				   GameObject.Find("Error_Talk").GetComponent<AudioSource>().Play();

@@ -54,7 +54,7 @@ void Update(){         // use spacebar as Next button
                 }
         }
    }
-   
+
 public void skipmode(){
 	if (skip == true) {
 		CancelInvoke();
@@ -75,7 +75,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Ahh it’s getting close to midnight, but I’ve still got to troubleshoot these student projects...";
+                Char1speech.text = "Ahh it's getting close to midnight, but I've still got to troubleshoot these student projects...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				GameObject.Find("JasonHmm1").GetComponent<AudioSource>().Play();
@@ -86,7 +86,7 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonFrown.SetActive(false);
                 JasonNormal.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Okay let’s see... what do I need to fix today...";
+                Char1speech.text = "Okay let's see... what do I need to fix today...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -109,7 +109,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 6){
                 Char1name.text = "Jason";
-                Char1speech.text = "That should fix it now. Let’s see...";
+                Char1speech.text = "That should fix it now. Let's see...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				GameObject.Find("DoubleClickSound").GetComponent<AudioSource>().Play();
@@ -118,13 +118,13 @@ public void talking(){         // main story function. Players hit next to progr
                 JasonSmile.SetActive(false);
                 JasonFrown.SetActive(true);
                 Char1name.text = "Jason";
-                Char1speech.text = "Huh? Looks like there’s another error...";
+                Char1speech.text = "Huh? Looks like there's another error...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
                 Char1name.text = "Jason";
-                Char1speech.text = "Hmm... What’s this? I haven’t seen this kind of script before... Why does it look like it’s written in scrambled text?";
+                Char1speech.text = "Hmm... What's this? I haven't seen this kind of script before... Why does it look like it's written in scrambled text?";
                 Char2name.text = "";
                 Char2speech.text = "";
 				GameObject.Find("JasonHmm4").GetComponent<AudioSource>().Play();
